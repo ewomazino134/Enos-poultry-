@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/pouchdb@7.2.1/dist /pouchdb.min.js"></script>
+  <title>Messenger</title>
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+  <header>
+        <div class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #chat-container {
+      display: flex;
+      width: 80%;
+      margin: 40px auto;
+    }
+    #user-list {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 30%;
+    }
+    #chat-log {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 70%;
+    }
+    #message-input {
+      padding: 10px;
+      width: 80%;
+    }
+    #send-button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #chat-container {
+  width: 80%;
+  margin: 40px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#chat-display {
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+#message-input {
+  width: 80%;
+  padding: 10px;
+}
+
+#send-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <h1>Messenger</h1>
+  <div id="chat-container">
+    <div id="user-list">
+      <h2>Users</h2>
+      <ul id="user-list-ul"></ul>
+    </div>
+    <div id="chat-log">
+      <h2 id="chat-header"></h2>
+      <div id="chat-messages"></div>
+      <input type="text" id="message-input" placeholder="Type a message...">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+  <form id="send-message-form">
+  <input type="text" id="message-text" placeholder="Type a message...">
+  <button id="send-button">Send</button>
+</form>
+<!-- Chat Interface -->
+<div id="chat-container">
+  <div id="chat-display"></div>
+  <input id="message-input" type="text" placeholder="Type a message...">
+  <button id="send-button">Send</button>
+</div>
+
+  <script src="chat.js"></script>
+</body>
+</html>

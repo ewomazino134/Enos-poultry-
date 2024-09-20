@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+<script src="https://unpkg.com/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+  <title>Poultry Products Marketplace</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Eno's birds Marketplace</h1>
+      <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="add-products.html">Add+</a></li>
+          <li><a href="#" class="active">Marketplace</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="contact.html">contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="marketplace-container">
+      <aside class="filters-sidebar">
+        <h2>Filters</h2>
+        <form>
+          <label>Category:</label>
+          <select>
+            <option value="">All</option>
+            <option value="chicken">Chicken</option>
+            <option value="turkey">Turkey</option>
+            <option value="duck">Duck</option>
+          </select>
+          <br>
+          <label>Price:</label>
+          <input type="range" min="0" max="100">
+          <br>
+          <label>Location:</label>
+          <input type="text">
+          <button>Apply Filters</button>
+        </form>
+      </aside>
+      <section class="product-listings">
+        <h2>Product Listings</h2>
+        <div id="product-list" class="product-list"></div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Eno's birds Products Marketplace</p>
+  </footer>
+  <script type="module" src="products.js"></script>
+</body>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marketplace-container {
+  display: flex;
+}
+
+.filters-sidebar {
+  width: 20%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.product-listings {
+  width: 80%;
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.product-card p {
+  margin-bottom: 20px;
+}
+
+.product-card button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #3e8e41;
+}
+</style>
+</html>

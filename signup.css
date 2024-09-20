@@ -1,0 +1,39 @@
+signup {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup label {
+  margin-bottom: 10px;
+}
+
+.signup input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.signup button {
+  background-color: #8BC34A;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header {
+    background-color: lightgreen;
+    text-align: right;
+    height: 50px;
+    box-shadow: 50px;
+    border: 100%;
+}
